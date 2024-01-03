@@ -10,9 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_03_021846) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_03_022303) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bookings", force: :cascade do |t|
+    t.integer "time"
+    t.float "price"
+    t.date "date"
+    t.bigint "dog_id", null: false
+    t.bigint "service_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dog_id"], name: "index_bookings_on_dog_id"
+    t.index ["service_id"], name: "index_bookings_on_service_id"
+  end
 
   create_table "dogs", force: :cascade do |t|
     t.integer "name"
@@ -26,6 +38,16 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_03_021846) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_dogs_on_user_id"
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.integer "walking_time"
+    t.float "price"
+    t.float "distance"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_services_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -56,6 +78,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_03_021846) do
     t.index ["user_id"], name: "index_walkers_on_user_id"
   end
 
+  add_foreign_key "bookings", "dogs"
+  add_foreign_key "bookings", "services"
   add_foreign_key "dogs", "users"
+  add_foreign_key "services", "users"
   add_foreign_key "walkers", "users"
 end
