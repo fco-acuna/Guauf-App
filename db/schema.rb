@@ -56,7 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_03_025202) do
 
   create_table "dogs", force: :cascade do |t|
     t.integer "name"
-    t.integer "age"
+    t.date "date_of_birth"
     t.text "breed"
     t.string "size"
     t.text "vaccines"
@@ -100,7 +100,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_03_025202) do
 
   create_table "walkers", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.integer "age"
+    t.date "date_of_birth"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_walkers_on_user_id"

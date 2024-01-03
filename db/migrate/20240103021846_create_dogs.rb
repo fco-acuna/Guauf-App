@@ -2,7 +2,7 @@ class CreateDogs < ActiveRecord::Migration[7.0]
   def change
     create_table :dogs do |t|
       t.integer :name
-      t.integer :age
+      t.date :date_of_birth
       t.text :breed
       t.string :size
       t.text :vaccines
