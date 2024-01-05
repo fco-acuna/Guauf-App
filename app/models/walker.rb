@@ -2,8 +2,7 @@ class Walker < ApplicationRecord
 
   # Asociaciones
   belongs_to :user
-  has_one_attached :photo
 
   # Validaciones
-  validates :age, :photo, presence: :true
+  validates :date_of_birth, presence: :true
 end
