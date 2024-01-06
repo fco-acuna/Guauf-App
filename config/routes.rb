@@ -5,4 +5,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  # resources :walkers
+  get "walkers", to: "walkers#index"
+  resources :walkers, only: [:index]
+  resources :walkers, only: [:show, :new, :create, :edit, :update, :destroy] do
+  resources :services, only: [:new, :create]
+  get 'walkers/new', to: 'walkers#new', as: 'new_walker'
+  end
 end

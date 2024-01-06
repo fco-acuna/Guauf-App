@@ -1,0 +1,40 @@
+<h1>Walkers</h1>
+
+<% if @walkers.empty? %>
+  <p>No hay paseadores por el momento</p>
+<% else %>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Walking Time (in minutes)</th>
+        <th>Price (per walk)</th>
+        <th>Average Rating</th>
+        <th>Phone Number</th>
+        <th>Actions</th> <!-- Header for actions -->
+      </tr>
+    </thead>
+    <tbody>
+      <% @walkers.each do |walker| %>
+        <% walker.services.each do |service| %>
+          <tr>
+            <td><%= walker.name %></td>
+            <td><%= walker.address %></td>
+            <td><%= service.walking_time %> minutes</td>
+            <td>$<%= service.price %></td>
+            <td><%= walker.rating_avg %>/5</td>
+            <td><%= walker.phone_number %></td>
+            <td>
+              <%# <%= link_to 'Book It Now', new_booking_path(service_id: service.id), class: 'btn btn-success' %> <!-- Assuming new_booking_path is the path for new bookings and that you pass the service_id as a parameter -->
+            </td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<div class="text-center">
+  <%= link_to 'Become a Walker', new_walker_path, class: 'btn btn-primary' %>
+</div>
