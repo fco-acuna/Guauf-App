@@ -4,5 +4,5 @@ class Walker < ApplicationRecord
   belongs_to :user
 
   # Validaciones
-  validates :date_of_birth, presence: :true
+  validates :date_of_birth, presence: true
 end
