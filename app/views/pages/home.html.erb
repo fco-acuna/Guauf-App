@@ -1,2 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%=image_path 'banner_perrito.png'%>);">
+  <div class="container">
+    <h1>Bienvenido a <strong>Guauf</strong>
+    <hr>
+    Paseos fáciles y <strong> seguros</strong></h1>
+    <a class="btnfos btnfos-5" href="#">¡Agenda Ya!</a>
+  </div>
+</div>
+
+<%# Mejores Paseadores%>
+ <h4 class="text-secondary mt-3">Nuestros Mejores Paseadores</h4>
+<hr>
+<%# <div class="row">
+<% @walkers.each do |walker| %>
+<%#   <div class="col-4">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=url_for walker.photo%>)">
+<%#       <%= walker.name %>
+<%#     </div>
+  </div>
+<% end %>
+<%# </div>
