@@ -12,6 +12,10 @@
   <%= f.error_notification %>
 
   <div class="signup input">
+    <%= f.input :name,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "name" }%>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
@@ -19,10 +23,22 @@
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: "New-Password" } %>
     <%= f.input :password_confirmation,
                 required: true,
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: "New-Password" } %>
+    <%= f.input :phone_number,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "Phone Number" }%>
+    <%= f.input :address,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "Addres" }%>
+    <%= f.input :about_me,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "About Me" }%>
 
     <%= f.button :submit, "Sign up" %>
   </div>

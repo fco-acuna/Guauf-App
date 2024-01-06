@@ -10,10 +10,10 @@ body{
 
 .bodysignup{
 	position: absolute;
-	top: -20px;
+	top: -25px;
 	left: -20px;
 	right: -40px;
-	bottom: -40px;
+	bottom: -180px;
 	width: auto;
 	height: auto;
 	background-image: url(signup_perrito.png);
@@ -28,7 +28,7 @@ body{
 	top: -20px;
 	left: -20px;
 	right: -40px;
-	bottom: -40px;
+	bottom: -200px;
 	width: auto;
 	height: auto;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
@@ -57,7 +57,7 @@ body{
 
 .signup{
 	position: absolute;
-	top: calc(50% - 75px);
+	top: calc(20% - 75px);
 	left: calc(50% - 50px);
 	height: 150px;
 	width: 350px;
@@ -65,7 +65,7 @@ body{
 	z-index: 2;
 }
 
-.signup input[type=email]{
+.signup input{
 	width: 250px;
 	height: 30px;
 	background: transparent;
@@ -78,7 +78,7 @@ body{
 	padding: 4px;
 }
 
-.signup input[type=password]{
+.signup input[type=text]{
 	width: 250px;
 	height: 30px;
 	background: transparent;
