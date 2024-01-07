@@ -1,3 +1,17 @@
+<h2><%=@dog.name %></h2>
+<p><%=@dog.date_of_birth %></p>
+<p><%=@dog.breed %></p>
+<p><%=@dog.size %></p>
+<p><%=@dog.vaccines %></p>
+<p><%=@dog.sickness_allergies %></p>
+<p><%=@dog.about_me %></p>
+
+<p><%=@dog.user_id %></p>
+
+
+
+
+
 <%= link_to "Delete",
   dog_path(@dog),
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
