@@ -5,4 +5,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  resource :user, only: [:show, :edit, :update] do
+    delete 'delete_avatar', on: :member
+  end
+  get '/mi_perfil', to: 'users#show', as: 'mi_perfil'
+
 end

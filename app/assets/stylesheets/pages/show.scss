@@ -1,0 +1,78 @@
+
+/* Estilos generales para la página de perfil */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Estilos para la sección de información personal */
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-section p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces de actualización */
+.update-link {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.update-link:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para la sección de avatar */
+.avatar-section {
+  margin-top: 20px;
+}
+
+.avatar {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.delete-avatar-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-avatar-link:hover {
+  background-color: #c0392b;
+}
+
+/* Estilos para el avatar predeterminado */
+.default-avatar {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

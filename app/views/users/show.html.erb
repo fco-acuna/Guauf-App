@@ -1,0 +1,31 @@
+<!-- app/views/users/show.html.erb -->
+
+<h1 class="profile-header">Mi Perfil</h1>
+
+<div class="container">
+  <div class="profile-section">
+    <h2>Información Personal</h2>
+    <p><strong>Nombre:</strong> <%= @user.name %></p>
+    <p><strong>Email:</strong> <%= @user.email %></p>
+    <p><strong>Teléfono:</strong> <%= @user.phone_number %></p>
+    <p><strong>Dirección:</strong> <%= @user.address %></p>
+    <p><strong>Acerca de Mí:</strong> <%= @user.about_me %></p>
+
+    <%= link_to "Actualizar Nombre", edit_user_path(@user), class: "update-link" %>
+    <%= link_to "Actualizar Email", edit_user_path(@user), class: "update-link" %>
+    <%= link_to "Actualizar Teléfono", edit_user_path(@user), class: "update-link" %>
+    <%= link_to "Actualizar Dirección", edit_user_path(@user), class: "update-link" %>
+    <%= link_to "Actualizar Acerca de Mí", edit_user_path(@user), class: "update-link" %>
+  </div>
+
+  <div class="avatar-section">
+    <h2>Avatar</h2>
+    <% if @user.photo.attached? %>
+      <%= image_tag @user.photo, class: "avatar" %>
+      <%= link_to "Eliminar Avatar", delete_avatar_user_path(@user), method: :delete, data: { confirm: "¿Estás seguro?" }, class: "delete-avatar-link" %>
+    <% else %>
+      <%= image_tag "avatar_perrito.png", class: "default-avatar" %>
+      <%= link_to "Agregar Avatar", edit_user_path(@user), class: "update-link" %>
+    <% end %>
+  </div>
+</div>
