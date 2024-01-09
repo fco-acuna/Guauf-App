@@ -12,7 +12,7 @@ body{
 	position: absolute;
 	top: 60px;
 	left: -20px;
-	right: -40px;
+	right: 0px;
 	bottom: -40px;
 	width: auto;
 	height: auto;
@@ -38,16 +38,16 @@ body{
 
 .header{
 	position: absolute;
-	top: calc(50% - 107px);
-	left: calc(50% - 447px);
+	top: calc(50% - 27px);
+	left: calc(50% - 445px);
 	z-index: 2;
 }
 
 .header div{
 	float: left;
 	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 29px;
 	font-weight: 200;
 }
 
@@ -57,7 +57,7 @@ body{
 
 .edit{
 	position: absolute;
-	top: calc(50% - 261px);
+	top: calc(50% - 227px);
 	left: calc(50% - 77px);
 	height: 150px;
 	width: 350px;
@@ -93,6 +93,8 @@ body{
 }
 
 .edit input[type=submit]{
+  top: 435px;
+  left: 1px;
 	width: 260px;
 	height: 35px;
 	background: #fff;

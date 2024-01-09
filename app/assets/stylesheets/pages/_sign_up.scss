@@ -9,9 +9,9 @@ body {
 
 .bodysignup {
   position: absolute;
-  top: -25px;
+  top: 55px;
   left: -20px;
-  right: -40px;
+  right: -6px;
   bottom: -180px;
   width: auto;
   height: auto;
@@ -24,10 +24,10 @@ body {
 
 .grad {
   position: absolute;
-  top: -200px;
+  top: 57px;
   left: -20px;
-  right: -40px;
-  bottom: -51px;
+  right: -95px;
+  bottom: -180px;
   width: auto;
   height: auto;
   background: -webkit-gradient(
@@ -43,16 +43,16 @@ body {
 
 .header {
   position: absolute;
-  top: calc(50% - 35px);
-  left: calc(50% - 280px);
+  top: calc(50% - -53px);
+  left: calc(50% - 286px);
   z-index: 2;
 }
 
 .header div {
   float: left;
   color: #fff;
-  font-family: 'Exo', sans-serif;
-  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
   font-weight: 200;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .signup {
   position: absolute;
-  top: calc(20% - 75px);
+  top: calc(20% - 45px);
   left: calc(50% - 50px);
   height: 150px;
   width: 350px;
@@ -85,10 +85,13 @@ body {
 
 .signup input[type=text] {
   margin-top: 10px;
+  background-color: transparent;
 }
 
 .signup input[type=submit] {
-  margin-top: 10px;
+  left: 6px;
+  margin-top: 234px;
+  right: 7px;
 }
 
 .signup input[type=button]:hover {

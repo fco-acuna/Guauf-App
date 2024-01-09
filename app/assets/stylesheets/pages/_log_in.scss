@@ -37,7 +37,7 @@ body{
 }
 
 .header{
-	position: absolute;
+	position:absolute;
 	top: calc(50% - -45px);
 	left: calc(50% - 335px);
 	z-index: 2;
@@ -46,7 +46,7 @@ body{
 .header div{
 	float: left;
 	color: #fff;
-	font-family: 'Exo', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 35px;
 	font-weight: 200;
 }
@@ -93,6 +93,8 @@ body{
 }
 
 .login input[type=submit]{
+  top: 230px;
+  left: 6px;
 	width: 260px;
 	height: 35px;
 	background: #fff;
