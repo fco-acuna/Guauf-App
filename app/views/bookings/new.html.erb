@@ -1,0 +1,7 @@
+<%= simple_form_for [@service, @booking] do |f| %>
+  <%= f.input :time %>
+  <%= f.input :price %>
+  <%= f.input :date %>
+  <%= f.input :dog_id, collection: current_user.dogs %>
+  <%= f.submit %>
+<% end %>

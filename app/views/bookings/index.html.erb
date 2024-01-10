@@ -1,0 +1,10 @@
+<h2>Estas son tus bookings</h2>
+
+<ul>
+    <% @bookings.each do |booking|  %>
+      <li><%= booking.time %></li>
+      <li><%= booking.price %></li>
+      <li><%= booking.date %></li>
+      <li><%= booking.dog_id %></li>
+    <% end  %>
+  </ul>
