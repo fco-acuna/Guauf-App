@@ -1,0 +1,38 @@
+<h1>Create a New Service</h1>
+
+<%= form_with(model: @service, local: true) do |form| %>
+  <% if @service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@service.errors.count, "error") %> prohibited this service from being saved:</h2>
+      <ul>
+        <% @service.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :walking_time, "Walking Time (minutes)" %>
+    <%= form.number_field :walking_time, min: 0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price, "Price ($)" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distance, "Distance (km)" %>
+    <%= form.text_field :distance %>
+  </div>
+
+
+<%= form.hidden_field :user_id, value: current_user.id %>
+  <div class="actions">
+    <%= form.submit "Create Service" %>
+  </div>
+<% end %>
+
+
+

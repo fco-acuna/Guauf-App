@@ -7,5 +7,5 @@ class Dog < ApplicationRecord
   has_many :services, through: :bookings
 
   # Validaciones
-  validates :name, :date_of_birth, :breed, :size, :sickness_allergies, presence: :true
+  validates :name, :date_of_birth, :breed, :size, :sickness_allergies, presence: true
 end
