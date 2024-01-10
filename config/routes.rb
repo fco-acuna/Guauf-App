@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     end
   devise_for :users
   root to: "pages#home"
+  resources :dogs
 
   resource :user, only: [:show, :edit, :update] do
     delete 'delete_avatar', on: :member

@@ -1,0 +1,7 @@
+<h1>Perritos que buscan que los paseen</h1>
+
+<ul>
+  <% @dogs.each do |dog|  %>
+    <h5><li><%= dog.name.capitalize %></li></h5>
+  <% end  %>
+</ul>
