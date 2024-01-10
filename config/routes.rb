@@ -3,11 +3,22 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
 
+  # Defines the root path route ("/")
+  # root "articles#index"
+
+  resource :user, only: [:show, :edit, :update] do
+    delete 'delete_avatar', on: :member
+  end
+  get '/mi_perfil', to: 'users#show', as: 'mi_perfil'
+
+
+
   resources :walkers do
   # get "walkers", to: "walkers#index"
   resources :services, only: [:new, :create]
   end
   resources :services
+
 end
 
 # esto estaba generando conflictos
