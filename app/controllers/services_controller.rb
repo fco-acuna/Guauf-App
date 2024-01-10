@@ -1,8 +1,8 @@
 class ServicesController < ApplicationController
-  def index
+   def index
     @services = Service.all
   end
-
+  
   def show
     @service = Service.find(params[:id])
   end
@@ -23,8 +23,6 @@ class ServicesController < ApplicationController
   def edit
     @service = Service.find(params[:id])
   end
-
-
   def update
     @service = Service.find(params[:id])
     if @service.update(service_params)
