@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :dogs
 
   get '/mi_perfil', to: 'users#show', as: 'mi_perfil'
-
+  delete 'delete_avatar', to: 'users#delete_avatar', as: :delete_avatar
 end
 
 # esto estaba generando conflictos

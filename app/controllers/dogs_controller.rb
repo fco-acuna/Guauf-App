@@ -1,10 +1,10 @@
 class DogsController < ApplicationController
     def index
-     @dogs = Dog.all
+     @dogs = Dog.where(user_id: current_user)
     end
 
     def new
-     @dog = Dog.new     
+     @dog = Dog.new
     end
 
     def create
@@ -25,7 +25,7 @@ class DogsController < ApplicationController
     def update
       @dog = Dog.find(params[:id])
       @dog.update(dog_params)
-      redirect_to dog_path(@dog)            
+      redirect_to dog_path(@dog)
     end
 
     def destroy
