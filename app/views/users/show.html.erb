@@ -19,7 +19,7 @@
   <div class="avatar-section">
     <% if @user.photo.attached? %>
       <%= image_tag @user.photo, class: "avatarshow" %>
-      <%= link_to "Eliminar Fotografia", delete_avatar_user_path(@user), method: :delete, data: { confirm: "¿Estás seguro?" }, class: "btnav" %>
+      <%#= link_to "Eliminar Fotografia", delete_avatar_user_path(@user), method: :delete, data: { confirm: "¿Estás seguro?" }, class: "btnav" %>
     <% else %>
       <%= image_tag "avatar_perrito.png", class: "default-avatar" %>
       <%= link_to "Agregar Avatar", edit_user_path(@user), class: "update-link" %>
@@ -27,6 +27,6 @@
   </div>
 </div>
 
-   <%= link_to "Cambiar Mi Contraseña", edit_user_path(@user), class: "btn" %>
+   <%#= link_to "Cambiar Mi Contraseña", edit_user_path(@user), class: "btn" %>
   </div>
 </div>

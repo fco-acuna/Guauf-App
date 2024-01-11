@@ -3,6 +3,5 @@ class PagesController < ApplicationController
 
   def home
     @walkers = Walker.all
-    @user = current_user
   end
 end
