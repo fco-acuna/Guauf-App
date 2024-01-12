@@ -4,6 +4,8 @@
 
 <div class="bodyshow"></div>
 <div class="grad"></div>
+<div class="grad"></div>
+
 
 <div class="container">
   <div class="header">
@@ -19,14 +21,14 @@
   <div class="avatar-section">
     <% if @user.photo.attached? %>
       <%= image_tag @user.photo, class: "avatarshow" %>
-      <%= link_to "Eliminar Fotografia", delete_avatar_user_path(@user), method: :delete, data: { confirm: "¿Estás seguro?" }, class: "btnav" %>
     <% else %>
       <%= image_tag "avatar_perrito.png", class: "default-avatar" %>
-      <%= link_to "Agregar Avatar", edit_user_path(@user), class: "update-link" %>
     <% end %>
   </div>
 </div>
 
-   <%= link_to "Cambiar Mi Contraseña", edit_user_path(@user), class: "btn" %>
+   <%= link_to "Eliminar Fotografia", delete_avatar_path, data: { turbo_method: :delete, turbo_confirm: "¿Estás seguro?" }, class: "btnshow" %>
+   <%= link_to "Agregar Avatar", "/users/edit", class: "update-link btnshow"  %>
+   <%= link_to "Cambiar Mi Contraseña", "/users/edit", class: "btnshow" %>
   </div>
 </div>

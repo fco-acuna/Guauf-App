@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.container {
+  position: relative;
+}
+
+.bodyindogs {
+  position: absolute;
+  top: 55px;
+  left: -8;
+  right: 0;
+  bottom: 0;
+  width: 101%;
+  height: 100%;
+  background-image: url('index_dog_perrito.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.gradindogs {
+  position: fixed;
+  top: 58px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.65))
+  );
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.headerindogsm {
+  top: 145px;
+  left: 164px;
+  position: relative;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  z-index: 3;
+}
+
+.headerindogs {
+  position: absolute;
+  top: 16%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  z-index: 2;
+}
+
+
+
+.headerdivindogs span {
+  color: #d3eef3 !important;
+}
+
+.indogs {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+}
+
+.indogs input {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.indogs input[type=submit] {
+  margin-top: 10px;
+}
+
+.indogs input[type=button]:hover {
+  opacity: 0.8;
+}
+
+.indogs input[type=button]:active {
+  opacity: 0.6;
+}
+
+.indogs input[type=text]:focus,
+.indogs input[type=password]:focus,
+.indogs input[type=button]:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.datos {
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.datos li {
+  padding-left: 5%;
+  text-align: left;
+  border-left: dashed darkgrey 1px;
+}
+
+.datos li:first-child {
+  border-left: none;
+}

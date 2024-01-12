@@ -20,8 +20,8 @@ class UsersController < ApplicationController
   end
 
   def delete_avatar
-    @user.avatar.purge
-    redirect_to user_path(@user), notice: 'Avatar eliminado exitosamente.'
+    current_user.photo.purge
+    redirect_to '/mi_perfil', notice: 'Avatar eliminado exitosamente.'
   end
 
   private
