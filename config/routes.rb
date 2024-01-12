@@ -3,10 +3,8 @@ Rails.application.routes.draw do
     root to: "pages#home"
 
 
-    resources :walkers do
-      resources :services, only: [:new, :create]
-    end
-    resources :services, except: [:new, :create] do
+    resources :walkers
+    resources :services do
       resources :bookings, only: [:new, :create]
     end
 
