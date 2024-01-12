@@ -1,7 +1,7 @@
-<h1>Perritos que buscan que los paseen</h1>
+<h1 class="text-secondary">Perritos que buscan que los paseen</h1>
 
 <ul>
   <% @dogs.each do |dog|  %>
-    <h5><li><%= dog.name.capitalize %></li></h5>
+    <h5 class="text-secondary"><li><%= dog.name.capitalize %> <%= dog.user.name.capitalize %></li></h5>
   <% end  %>
 </ul>
