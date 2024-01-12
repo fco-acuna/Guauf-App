@@ -1,4 +1,12 @@
 
+<h1 class="text-secondary">Perritos que buscan que los paseen</h1>
+
+<ul>
+  <% @dogs.each do |dog|  %>
+    <h5 class="text-secondary"><li><%= dog.name.capitalize %> <%= dog.user.name.capitalize %></li></h5>
+  <% end  %>
+</ul>
+
 <div class="bodyindogs"></div>
 <div class="gradindogs"></div>
 
@@ -18,3 +26,4 @@
   </div>
 </div>
 </div>
+
