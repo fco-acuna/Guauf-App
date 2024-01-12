@@ -25,6 +25,8 @@
             <td>$<%= service.price %></td>
             <td><%= walker.rating_avg %>/5</td>
             <td><%= walker.phone_number %></td>
+            <td><%= link_to 'Agenda Ya!', '/bookings/new', class: 'btn btn-primary' %></td>
+
             <td>
               <%# <%= link_to 'Book It Now', new_booking_path(service_id: service.id), class: 'btn btn-success' %> <!-- Assuming new_booking_path is the path for new bookings and that you pass the service_id as a parameter -->
             </td>
@@ -34,7 +36,4 @@
     </tbody>
   </table>
 <% end %>
-
-<div class="text-center">
-  <%= link_to 'Become a Walker', new_walker_path, class: 'btn btn-primary' %>
 </div>
