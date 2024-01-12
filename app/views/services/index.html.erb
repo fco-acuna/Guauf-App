@@ -1,0 +1,27 @@
+<h1>Services List</h1>
+
+<%# <%= link_to 'Create New Service', new_service_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Walking Time (minutes)</th>
+      <th>Price ($)</th>
+      <th>Distance (km)</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @services.each do |service| %>
+      <tr>
+        <td><%= current_user.name %></td>
+        <td><%= service.walking_time %></td>
+        <td><%= service.price %></td>
+        <td><%= service.distance %></td>
+        <td><%= link_to 'Edit', edit_service_path(service) %></td>
+        <td><%= link_to 'Eliminar', service_path(service), data: { turbo_method: :delete, turbo_confirm: "¿Estás seguro?" } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
