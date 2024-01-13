@@ -12,6 +12,7 @@
 
 
 <hr>
+
 <div class="quienes-somos-container">
   <h2 class="quienes-somos-titulo">¿Quienes Somos?</h2>
   <hr>
@@ -22,6 +23,16 @@
   que están listos para brindar el mejor cuidado a tus compañeros de cuatro patas.
   Bienvenido a Guauf: Donde Tu Perrito Encuentra al Paseador Perfecto
   </p>
+
+
+<div class="row">
+  <% @walkers.each do |walker| %>
+    <div class="col-4">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= url_for walker.respond_to?(:user) ? walker.user.photo : walker.photo %>)">
+        <%= walker.respond_to?(:user) ? walker.user.name : walker.name %>
+      </div>
+    </div>
+  <% end %>
 </div>
 
 <div class="gradhome"></div>

@@ -13,6 +13,7 @@ class ServicesController < ApplicationController
 
   def create
     @service = Service.new(service_params)
+    @service.walker = current_user.walker
     if @service.save
       redirect_to walkers_path, notice: 'El servicio fue creado exitosamente.'
     else
