@@ -7,8 +7,10 @@ body {
   font-size: 12px;
 }
 
-.container {
+.containerindogs {
   position: relative;
+  left: 70px;
+  width: 357px;
 }
 
 .bodyindogs {
@@ -18,7 +20,7 @@ body {
   right: 0;
   bottom: 0;
   width: 101%;
-  height: 100%;
+  height: 101%;
   background-image: url('index_dog_perrito.png');
   background-size: cover;
   background-position: center;
@@ -46,8 +48,9 @@ body {
 }
 
 .headerindogsm {
-  top: 145px;
-  left: 164px;
+  top: 52px;
+  left: 87px;
+  text-align: justify;
   position: relative;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -125,17 +128,95 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.datos {
+.datosindogos {
   height: 80%;
   justify-content: space-evenly;
 }
 
-.datos li {
+.datosindogos li {
   padding-left: 5%;
   text-align: left;
   border-left: dashed darkgrey 1px;
 }
 
-.datos li:first-child {
+.datosindogos li:first-child {
   border-left: none;
+}
+
+.btnindogos{
+  text-decoration: none;
+  padding: 14px;
+  top: -582px;
+  left: 1091px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase!important;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  border-radius:50px;
+  position: relative;
+  overflow: hidden!important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent!important;
+  z-index:10;
+}
+
+
+.btnindogos::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #071982;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+   box-shadow:2px 0px 14px rgba(0,0,0,.6);
+}
+
+.btnindogos::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #80ffd3;
+  position: absolute;
+-ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+  -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+
+
+.btnindogos:hover::before {
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
 }

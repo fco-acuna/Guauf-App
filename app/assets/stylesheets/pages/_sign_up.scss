@@ -9,7 +9,7 @@ body {
 
 .bodysignup {
   position: absolute;
-  top: 55px;
+  top: 77px;
   left: -20px;
   right: -6px;
   bottom: -180px;
@@ -22,7 +22,7 @@ body {
   z-index: 0;
 }
 
-.grad {
+.gradsignup {
   position: absolute;
   top: 57px;
   left: -20px;
@@ -41,14 +41,14 @@ body {
   opacity: 0.7;
 }
 
-.header {
+.headersignup {
   position: absolute;
   top: calc(50% - -53px);
   left: calc(50% - 286px);
   z-index: 2;
 }
 
-.header div {
+.headersignup div {
   float: left;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -56,7 +56,7 @@ body {
   font-weight: 200;
 }
 
-.header div span {
+.headersignup div span {
   color: #d3eef3 !important;
 }
 
@@ -89,9 +89,11 @@ body {
 }
 
 .signup input[type=submit] {
-  left: 6px;
-  margin-top: 234px;
-  right: 7px;
+  left: 0px;
+  padding: 13px;
+  margin-top: 0px;
+  right: -4px;
+  position: relative;
 }
 
 .signup input[type=button]:hover {

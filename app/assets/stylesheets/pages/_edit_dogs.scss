@@ -1,0 +1,237 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #f9f8fa;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.bodydogsedit{
+	position: absolute;
+	top: 60px;
+	left: -20px;
+	right: 0px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(edit_dogs_perrito.png);
+	background-size: cover;
+  background-position: center;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+}
+
+.graddogsedit{
+	position: absolute;
+	top: 54px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.headerdogsedit{
+	position: absolute;
+	top: calc(23% - 27px);
+	left: calc(39% - 445px);
+	z-index: 2;
+}
+
+.headerdogsedit div{
+	float: left;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 29px;
+	font-weight: 200;
+}
+
+.headerdogsedit div span{
+	color: #d3eef3 !important;
+}
+
+.dogsedit{
+	position: absolute;
+	top: calc(50% - 227px);
+	left: calc(50% - 77px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 3;
+}
+
+.dogsedit input[type=label]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.dogsedit input[type=text_field]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.dogsedit input[type=submit]{
+  top: 531px;
+  left: 1px;
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.dogsedit input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.dogsedit input[type=button]:active{
+	opacity: 0.6;
+}
+
+.dogsedit input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.dogsedit input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.dogsedit input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+
+
+
+.datosdogsedit {
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.datosdogsedit li {
+  padding-left: 5%;
+  text-align: left;
+  border-left: dashed darkgrey 1px;
+}
+
+.datosdogsedit li:first-child {
+  border-left: none;
+}
+
+.btndogsedit{
+  text-decoration: none;
+  padding: 23px;
+  width: 174px;
+  top: 160px;
+  left: 552px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase!important;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  border-radius:50px;
+  position: relative;
+  overflow: hidden!important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent!important;
+  z-index:10;
+}
+
+
+.btndogsedit::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #071982;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+   box-shadow:2px 0px 14px rgba(0,0,0,.6);
+}
+
+.btndogsedit::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #80ffd3;
+  position: absolute;
+-ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+  -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+
+
+.btndogsedit:hover::before {
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}

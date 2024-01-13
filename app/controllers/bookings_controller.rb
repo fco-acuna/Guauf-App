@@ -17,8 +17,8 @@ class BookingsController < ApplicationController
     @service = Service.find(params[:service_id])
     @booking.service = @service
     if @booking.save!
-      redirect_to service_path(@service)
-    else 
+      redirect_to "/services", notice: 'Reserva creada exitosamente.'
+    else
       render :new, status: :unprocessable_entity
     end
   end

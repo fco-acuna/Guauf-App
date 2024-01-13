@@ -11,7 +11,7 @@ class DogsController < ApplicationController
       @dog = Dog.new(dog_params)
       @dog.user = current_user
       @dog.save!
-      redirect_to dog_path(@dog)
+      redirect_to "/dogs";(@dog)
     end
 
     def show

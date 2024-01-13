@@ -1,1 +1,182 @@
 // Specific CSS for your home-page
+.bannerhome {
+  background-size: cover;
+  background-position: center 720px;
+  background-size: 1550px 1200px;
+  padding: 150px 0;
+}
+
+.bannerhome  h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.bannerhome  p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+//---- Boton Agenda Ya!
+* {
+  -moz-box-sizing: inherit;
+       box-sizing: inherit;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+
+.buttonshome  {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.containerhome  {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1.heading {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.25em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 4.25em;
+    margin: 0 0 0.5em;
+  }
+}
+
+.btnhome  {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  margin: 0 auto 2em;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .btnfos {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  .btnfos:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .btnfos:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  .btnfos:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+
+.btnhome {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 0px;
+  text-shadow: none;
+  text-decoration: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+}
+
+.btnhome :hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-offset: 15px;
+  outline-color: rgba(255, 255, 255, 0);
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.bodyhome {
+  position: absolute;
+  top: 55px;
+  left: -8;
+  right: 0;
+  bottom: 0;
+  width: 101%;
+  height: 101%;
+  background-image: url('banner_home.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.quienes-somos-container {
+  position: absolute;
+  background-image: url('banner_home.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  width: 40.5cm;
+}
+
+.quienes-somos-texto{
+  font-size: 24px;
+  padding: 96px;
+  color: #fff;
+  z-index: 7;
+}
+
+.quienes-somos-titulo{
+  color: #7a797f;
+  font-size: 30px;
+  font-family:'Montserrat', sans-serif;
+}
+
+.gradhome {
+  position: absolute;
+  top: 676px;
+  left: 6px;
+  right: -6px;
+  bottom: -453px;
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.65))
+  );
+  z-index: 2;
+  opacity: 0.7;
+}
