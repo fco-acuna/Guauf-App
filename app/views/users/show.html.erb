@@ -24,9 +24,6 @@
       <%#= link_to "Eliminar Fotografia", delete_avatar_user_path(@user), method: :delete, data: { confirm: "¿Estás seguro?" }, class: "btnav" %>
     <% else %>
       <%= image_tag "avatar_perrito.png", class: "default-avatar" %>
-      <%#= link_to "Agregar Avatar", edit_user_path(@user), class: "update-link" %>
-    <% else %>
-      <%= image_tag "avatar_perrito.png", class: "default-avatar" %>
     <% end %>
   </div>
 </div>
