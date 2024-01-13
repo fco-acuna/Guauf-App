@@ -125,25 +125,6 @@ h1.heading {
   text-shadow: 1px 1px 2px #427388;
 }
 
-.gradhome {
-  position: fixed;
-  top: 58px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(0, 0, 0, 0)),
-    color-stop(100%, rgba(0, 0, 0, 0.65))
-  );
-  z-index: 1;
-  opacity: 0.7;
-}
-
 .bodyhome {
   position: absolute;
   top: 55px;
@@ -160,9 +141,42 @@ h1.heading {
 }
 
 .quienes-somos-container {
-  background-image: url('banner_home.png'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta correcta a tu imagen */
+  position: absolute;
+  background-image: url('banner_home.png');
   background-size: cover;
   background-position: center;
-  padding: 20px; /* Ajusta el espacio interno según sea necesario */
-  color: #fff; /* Ajusta el color del texto para que sea legible en tu imagen de fondo */
+  z-index: 1;
+  width: 40.5cm;
+}
+
+.quienes-somos-texto{
+  font-size: 24px;
+  padding: 96px;
+  color: #fff;
+  z-index: 7;
+}
+
+.quienes-somos-titulo{
+  color: #7a797f;
+  font-size: 30px;
+  font-family:'Montserrat', sans-serif;
+}
+
+.gradhome {
+  position: absolute;
+  top: 676px;
+  left: 6px;
+  right: -6px;
+  bottom: -453px;
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.65))
+  );
+  z-index: 2;
+  opacity: 0.7;
 }
