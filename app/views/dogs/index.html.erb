@@ -5,16 +5,20 @@
 
 <h1 class="headerindogs">Perfil Perruno</h1>
 
-<div class="container">
+<div class="containerindogs">
   <div class="headerindogsm">
-    <ul class="datos">
+    <ul class="datosindogs">
       <% @dogs.each do |dog| %>
+      <hr>
          <div> <li><p><strong>Nombre:</strong> <span><%= dog.name.capitalize %></span></p></li></div>
          <div> <li><p><strong>Raza:</strong> <span><%= dog.breed.capitalize %></span></p></li></div>
          <div> <li><p><strong>Tamaño:</strong> <span><%= dog.size.capitalize %></span></p></li></div>
          <div> <li><p><strong>Alergias o Enfermedades:</strong> <span><%= dog.sickness_allergies.capitalize %></span></p></li></div>
+      <hr>
       <% end %>
     </ul>
   </div>
-</div>
+    <%= link_to "Agregar Perrito", "/dogs/new", class: "btnindogos"  %>
+    <%= link_to "Editar Perrito", "/dogs/4/edit", class: "btnindogos"  %>
+
 </div>

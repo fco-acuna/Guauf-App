@@ -1,27 +1,25 @@
-<h1>Services List</h1>
+<div class="bodyservindx"></div>
+<div class="gradservindx"></div>
+
+
+<h1 class="headerservindx">Mis Paseos</h1>
 
 <%# <%= link_to 'Create New Service', new_service_path %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Walking Time (minutes)</th>
-      <th>Price ($)</th>
-      <th>Distance (km)</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+    <div class="containerservindx">
+  <div class="headerdivservindx">
+    <ul class="datosservindx">
     <% @services.each do |service| %>
-      <tr>
-        <td><%= current_user.name %></td>
-        <td><%= service.walking_time %></td>
-        <td><%= service.price %></td>
-        <td><%= service.distance %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Eliminar', service_path(service), data: { turbo_method: :delete, turbo_confirm: "¿Estás seguro?" } %></td>
-      </tr>
+<hr>
+        <div> <li><p><strong>Nombre:</strong> <span><%= current_user.name.capitalize %></span></p></li></div>
+        <div> <li><p><strong>Tiempo:</strong> <span><%= service.walking_time %></span></p></li></div>
+        <div> <li><p><strong>Precio ($):</strong> <span><%= service.price %></span></p></li></div>
+        <div> <li><p><strong>Distancia (km):</strong> <span><%= service.distance %></span></p></li></div>
+<hr>
+        <%= link_to 'Eliminar', service_path(service), class: "btnservindx", data: { turbo_method: :delete, turbo_confirm: "¿Estás seguro?" } %>
+
     <% end %>
-  </tbody>
-</table>
+    </ul>
+  </div>
+  </div>

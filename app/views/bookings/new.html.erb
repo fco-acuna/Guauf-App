@@ -1,3 +1,14 @@
+
+<div class="bodynewbooking"></div>
+<div class="gradnewbooking"></div>
+
+
+<h1 class="headernewbooking">Paseo Nuevo</h1>
+
+<div class="containernewbooking">
+  <div class="headerdivnewbooking">
+    <ul class="datosnewbooking">
+<div class="btnnewbooking">
 <%= simple_form_for [@service, @booking] do |f| %>
   <%= f.input :time %>
   <%= f.input :price %>
@@ -5,3 +16,7 @@
   <%= f.input :dog_id, collection: current_user.dogs %>
   <%= f.submit %>
 <% end %>
+    </ul>
+  </div>
+</div>
+</div>

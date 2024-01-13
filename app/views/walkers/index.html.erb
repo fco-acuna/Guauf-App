@@ -1,31 +1,26 @@
-<h1>Walkers</h1>
+<h1 class="headerwlkindx">Paseadores Guauf</h1>
+<div class="bodywlkindx"></div>
+<div class="gradwlkindx"></div>
 
+<div class="containerwlkindx">
+  <div class="headerwlkindx">
 <% if @walkers.empty? %>
   <p>No hay paseadores por el momento</p>
 <% else %>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Walking Time (in minutes)</th>
-        <th>Price (per walk)</th>
-        <th>Average Rating</th>
-        <th>Phone Number</th>
-        <th>Actions</th> <!-- Header for actions -->
-      </tr>
-    </thead>
-    <tbody>
+
+      <div class="containerwlkindx">
+  <div class="headerdivwlkindx">
+    <ul class="datoswlkindx">
+      <ul class="datoswlkindx">
       <% @walkers.each do |walker| %>
         <% walker.services.each do |service| %>
-          <tr>
-            <td><%= walker.name %></td>
-            <td><%= walker.address %></td>
-            <td><%= service.walking_time %> minutes</td>
-            <td>$<%= service.price %></td>
-            <td><%= walker.rating_avg %>/5</td>
-            <td><%= walker.phone_number %></td>
-            <td><%= link_to 'Agenda Ya!', '/bookings/new', class: 'btn btn-primary' %></td>
+            <div> <li><p><strong>Nombre:</strong> <span><%= walker.name %></span> </p></li></div>
+            <div> <li><p><strong>Direccion:</strong><span><%= walker.address %></span> </p></li></div>
+            <div> <li><p><strong>Tiempo:</strong><span><%= service.walking_time %> minutes</span> </p></li></div>
+            <div> <li><p><strong>Precio:</strong><span>$<%= service.price %></span> </p></li></div>
+            <div> <li><p><strong>Calificacion:</strong><span><%= walker.rating_avg %>/5</span> </p></li></div>
+            <div> <li><p><strong>Telefono:</strong><span><%= walker.phone_number %></span> </p></li></div>
+            <div> <li><%= link_to '¡Agenda Ya!', '/services', class: 'btnwlkindx' %>
 
             <td>
               <%# <%= link_to 'Book It Now', new_booking_path(service_id: service.id), class: 'btn btn-success' %> <!-- Assuming new_booking_path is the path for new bookings and that you pass the service_id as a parameter -->
@@ -33,7 +28,9 @@
           </tr>
         <% end %>
       <% end %>
-    </tbody>
-  </table>
-<% end %>
+     </ul>
+     </div>
+  </div>
+  </div>
 </div>
+<% end %>

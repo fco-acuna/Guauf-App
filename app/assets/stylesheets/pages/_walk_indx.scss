@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0a0a;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.containerwlkindx {
+  position: relative;
+  top: 186px;
+  left: -85;
+}
+
+.bodywlkindx {
+  position: absolute;
+  top: 55px;
+  left: -8px;
+  right: 0;
+  bottom: 52px;
+  width: 100%;
+  height: 113%;
+  background-image: url('walker_index_perritos.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.gradwlkindx {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 101%;
+  height: 114%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.65))
+  );
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.headerwlkindx {
+  width: 80%;
+  top: 44px;
+  left: 164px;
+  position: relative;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  z-index: 3;
+}
+
+.headerdivwlkindx {
+  position: absolute;
+  top: 74%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  z-index: 2;
+}
+
+.headerdivwlkindx span {
+  color: #d3eef3 !important;
+}
+
+.wlkindx {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 4;
+}
+
+.wlkindx input {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.wlkindx input[type=submit] {
+  margin-top: 10px;
+}
+
+.wlkindx input[type=button]:hover {
+  opacity: 0.8;
+}
+
+.wlkindx input[type=button]:active {
+  opacity: 0.6;
+}
+
+.wlkindx input[type=text]:focus,
+.wlkindx input[type=password]:focus,
+.wlkindx input[type=button]:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.datoswlkindx {
+  height: 80%;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
+
+.datoswlkindx li {
+  padding-left: 5%;
+  text-align: left;
+  border-left: dashed darkgrey 1px;
+  margin-bottom: 10px;
+}
+
+.datoswlkindx li:first-child {
+  border-left: none;
+}
+
+/* Botones de Actualizacion */
+
+.btnwlkindx{
+  text-decoration: none;
+  padding: 10px;
+  top: -142px;
+  left: 500px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase!important;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  border-radius:50px;
+  position: relative;
+  overflow: hidden!important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent!important;
+  z-index:10;
+}
+
+
+.btnwlkindx::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #071982;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+   box-shadow:2px 0px 14px rgba(0,0,0,.6);
+}
+
+.btnwlkindx::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #80ffd3;
+  position: absolute;
+-ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+  -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+
+
+.btnwlkindx:hover::before {
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
+/* Avatar de Show*/
+
+.avatarwlkindx {
+  top: -290px;
+  left: -274px;
+  width: 161px;
+  border-radius: 50%;
+  position: relative;
+}
+.avatarwlkindx-large {
+  width: 56px;
+  border-radius: 50%;
+}
+.avatarwlkindx-bordered {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+.avatarwlkindx-square {
+  width: 40px;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+
+/* Datos ul/li */
+.datoswlkindx {
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.datoswlkindx li {
+  padding-left: 5%;
+  text-align: left;
+  border-left: dashed darkgrey 1px;
+}
+
+.datoswlkindx li:first-child {
+  border-left: none;
+}

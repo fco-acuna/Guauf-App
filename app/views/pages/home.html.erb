@@ -1,21 +1,22 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%=image_path 'banner_perrito.png'%>);">
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'banner_perrito.png' %>);">
   <div class="container">
     <h1>Bienvenido a <strong>Guauf</strong>
-    <hr>
-    Paseos fáciles y <strong> seguros</strong></h1>
+      <hr>
+      Paseos fáciles y <strong>seguros</strong></h1>
     <a class="btnfos btnfos-5" href="/walkers">¡Agenda Ya!</a>
   </div>
 </div>
-
-<%# Mejores Paseadores%>
-<h4 class="text-secondary mt-3">Nuestros Mejores Paseadores</h4>
 <hr>
-<div class="row">
-  <% @walkers.each do |walker| %>
-    <div class="col-4">
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= url_for walker.respond_to?(:user) ? walker.user.photo : walker.photo %>)">
-        <%= walker.respond_to?(:user) ? walker.user.name : walker.name %>
-      </div>
-    </div>
-  <% end %>
+<%# Mejores Paseadores%>
+<hr>
+<div class="quienes-somos-container">
+  <h2 class="text-secondary mt-3">¿Quienes Somos?</h2>
+  <hr>
+  <p>
+  En Guauf, nos apasiona el bienestar de tus peludos amigos y creemos que cada
+  perrito merece disfrutar de paseos felices y saludables. Nuestra plataforma está
+  diseñada para conectar a dueños de perros con paseadores apasionados y confiables
+  que están listos para brindar el mejor cuidado a tus compañeros de cuatro patas.
+  Bienvenido a Guauf: Donde Tu Perrito Encuentra al Paseador Perfecto</p>
 </div>
