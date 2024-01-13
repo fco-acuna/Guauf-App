@@ -20,7 +20,7 @@ body {
   right: 0;
   bottom: 0;
   width: 101%;
-  height: 101%;
+  height: 117%;
   background-image: url('index_dog_perrito.png');
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@ body {
 }
 
 .headerindogsm {
-  top: 52px;
+  bottom: 57px;
   left: 87px;
   text-align: justify;
   position: relative;
@@ -147,7 +147,7 @@ body {
 .btnindogos{
   text-decoration: none;
   padding: 14px;
-  top: -582px;
+  bottom: 700px;
   left: 1091px;
   font-family: "proxima-nova", sans-serif;
   font-weight: 500;
